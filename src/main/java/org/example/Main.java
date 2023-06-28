@@ -14,7 +14,7 @@ public class Main {
     private static String modoConexion = "";
 
     public static void main(String[] args) {
-        String mensaje = "Software ORM - JPA";
+        String mensaje = "Holaaa";
         System.out.println(mensaje);
         if(args.length >= 1){
             modoConexion = args[0];
@@ -54,7 +54,7 @@ public class Main {
             ctx.result("Bien!...");
         });
 
-        new CrudTradicionalControlador(app).aplicarRutas();
+        //new CrudTradicionalControlador(app).aplicarRutas();
     }
 
     /**
@@ -66,7 +66,7 @@ public class Main {
         if (processBuilder.environment().get("PORT") != null) {
             return Integer.parseInt(processBuilder.environment().get("PORT"));
         }
-        return 7000; //Retorna el puerto por defecto en caso de no estar en Heroku.
+        return 7001; //Retorna el puerto por defecto en caso de no estar en Heroku.
     }
 
     /**

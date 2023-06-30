@@ -14,7 +14,7 @@ public class Main {
     private static String modoConexion = "";
 
     public static void main(String[] args) {
-        String mensaje = "Saludos desde la app2";
+        String mensaje = "Esta es la aplicacion 2";
         System.out.println(mensaje);
         if(args.length >= 1){
             modoConexion = args[0];
